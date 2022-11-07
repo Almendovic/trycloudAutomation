@@ -23,7 +23,7 @@ public class BrowserUtils {
     }
 
     //this method accepts 3 arg
-    //arg1: webdriver
+
     //arg2:expected InUrl : for verify if the url contains given String
     //if conditions is true it will break the loop
     //arr3 expectedTitle will be compared to actualTitle

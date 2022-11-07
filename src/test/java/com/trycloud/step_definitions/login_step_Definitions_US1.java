@@ -26,6 +26,7 @@ public class login_step_Definitions_US1 {
     public void user_use_username_and_passcode_userpass123(String str1, String str2) {
         basePage.userName.sendKeys(str1);
         basePage.passWord.sendKeys(str2);
+
     }
 
     @When("user click the login button")
