@@ -30,40 +30,21 @@ public class manage_folders_step_Definitions_US7AC2 {
     Actions actions = new Actions(Driver.getDriver());
 
 
-
-
-
-
-
-
-
     @When("the user uploads a file with the upload file option")
     public void theUserUploadsAFileWithTheUploadFileOption() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(manageFolderPage.uploadFile));
-        String path="/Users/Alen/Desktop/all_Interview_Prep_updated_-1.pdf";
+        String path="/Users/azizaghani/Desktop/Strore manager 78 AC1.png";
      //   manageFolderPage.uploadFile.click();
         Thread.sleep(5000);
         manageFolderPage.inputFile.sendKeys(path);
          Thread.sleep(5000);
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
     @Then("Verify the file is displayed on the page")
     public void verifyTheFileIsDisplayedOnThePage() {
         wait.until(ExpectedConditions.visibilityOf(manageFolderPage.fileTobeVerified));
-        String expectedFileName="all_Interview_Prep_updated_-1";
+        String expectedFileName="Strore manager 78 AC1";
         Assert.assertEquals(expectedFileName,manageFolderPage.fileTobeVerified.getText());
         System.out.println("ActualTitle"+manageFolderPage.fileTobeVerified.getText());
 

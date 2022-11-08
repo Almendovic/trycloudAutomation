@@ -39,7 +39,7 @@ public class ManageFolderPage {
     @FindBy(xpath = "//input[@type='file']")
     public WebElement inputFile;
 
-    @FindBy(xpath = "(//span[contains(normalize-space(),'all_Interview_Prep_updated_-1')])[2]")
+    @FindBy(xpath = "(//span[contains(normalize-space(),'Strore manager 78 AC1')])[2]")
     public WebElement fileTobeVerified;
 
 
